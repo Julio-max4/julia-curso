@@ -7,43 +7,46 @@
     <link rel="stylesheet" href="css/index.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: 'Poppins', sans-serif;
+            background: #f0f4f8;
             color: #333;
             margin: 0;
-            padding: 20px;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
         }
         .container {
-            max-width: 800px;
+            width: 60%;
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
         }
         .header {
             text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
         }
         .header img {
-            width: 120px;
+            width: 130px;
             border-radius: 50%;
         }
         h1, h2 {
-            color: #ff6f61;
+            color: #3a3d98;
         }
         .section {
-            margin-bottom: 20px;
+            margin: 20px 0;
         }
-        .skills, .languages {
-            display: flex;
-            flex-direction: column;
-        }
-        .skill, .language {
+        .contact p, .skills .skill, .languages .language {
             display: flex;
             justify-content: space-between;
-            background: #ffe0e9;
-            padding: 5px;
-            margin: 5px 0;
+            padding: 8px;
+            background: #e3e7ff;
             border-radius: 5px;
+            margin: 5px 0;
+        }
+        .skills .skill span, .languages .language span {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -55,7 +58,7 @@
             <h2>MLOps Engineer | Data Scientist</h2>
         </div>
 
-        <div class="section">
+        <div class="section contact">
             <h2>Contact</h2>
             <p><i class="fas fa-envelope"></i> juliocesarescalantelopez75@gmail.com</p>
             <p><i class="fab fa-linkedin"></i> linkedin.com/in/julio-cesar-escalante</p>
@@ -73,23 +76,19 @@
             <p>Pandas - Kaggle</p>
         </div>
 
-        <div class="section">
+        <div class="section languages">
             <h2>Languages</h2>
-            <div class="languages">
-                <div class="language"><span>Spanish</span><span>100%</span></div>
-                <div class="language"><span>English</span><span>60%</span></div>
-            </div>
+            <div class="language"><span>Spanish</span><span>100%</span></div>
+            <div class="language"><span>English</span><span>70%</span></div>
         </div>
 
-        <div class="section">
+        <div class="section skills">
             <h2>Skills</h2>
-            <div class="skills">
-                <div class="skill"><span>Python</span><span>★★★★☆</span></div>
-                <div class="skill"><span>SQL</span><span>★★★★☆</span></div>
-                <div class="skill"><span>GCP</span><span>★★★☆☆</span></div>
-                <div class="skill"><span>Excel</span><span>★★★☆☆</span></div>
-                <div class="skill"><span>Git</span><span>★★★★☆</span></div>
-            </div>
+            <div class="skill"><span>Python</span><span>★★★★☆</span></div>
+            <div class="skill"><span>SQL</span><span>★★★★☆</span></div>
+            <div class="skill"><span>GCP</span><span>★★★☆☆</span></div>
+            <div class="skill"><span>Excel</span><span>★★★☆☆</span></div>
+            <div class="skill"><span>Git</span><span>★★★★☆</span></div>
         </div>
     </div>
 </body>
